@@ -1,0 +1,12 @@
+Programı çalıştırdıktan sonra;
+Kullanıcı adı = Fahriye
+Şifre= 123 girerek anasayfaya giriyoruz.
+Anasayfanın içinde öğrenci,fakülteler,notlar ve çıkış sekmeleri bulunuyor.
+Öğrenci sekmesinin altında yeni öğrenci eklme/silme sekmesine tıkladığımızda öğrenci ekleme silme işlemleri gerçekleşiyor.
+Öğrenci sekmesinin altında öğrenci listesi sekmesine tıkladığımızda öğrenci listesi açılıyor ve arama kısmına adları yazarak arama işlemi gerçekleştiriyor.
+Fakülteler sekmesinin altında fakülteler listesi sekmesine tıkladığımızda mühendislik,iktisadi ve idari bilimler gibi sekmeler mevcut.
+Fakülteler sekmesinin altındaki fakülteler listesinde olan mühendislik sekmesinin altında bulunan bilgisayar müh sekmesine tıkladığımızda sekme açılıyor.
+Anasayfada bulunan notlar sekmesine tıkladığımızda not hesaplama ve öğrenci notları sekmeleri bulunuyor.
+Not hesaplama sekmesinde öğrencilerin notlarını hesaplıyoruz.
+Öğrenci notları sekmesine tıkladığımızda ad soyad ve notları girilip kaydedebiliyoruz.
+Son olarak çıkış sekmesine tıkladığımızda program sonlanmış oluyor.

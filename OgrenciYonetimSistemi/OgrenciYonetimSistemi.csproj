@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Tools.InnoSetup.6.0.3\build\Tools.InnoSetup.props" Condition="Exists('..\packages\Tools.InnoSetup.6.0.3\build\Tools.InnoSetup.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CAE2519-ADD2-499A-ABEE-53C57DDE5D86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OgrenciYonetimSistemi</RootNamespace>
+    <AssemblyName>OgrenciYonetimSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v18.2.Win, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.2.UI, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2.UI, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.UI, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.Wizard, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Presets, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Win, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualStudio.Setup.Configuration.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Setup.Configuration.Interop.1.16.30\lib\net35\Microsoft.VisualStudio.Setup.Configuration.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BilgisayarMüh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgisayarMüh.Designer.cs">
+      <DependentUpon>BilgisayarMüh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DersListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersListesi.Designer.cs">
+      <DependentUpon>DersListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş.cs" />
+    <Compile Include="Not_Hesaplamacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Not_Hesaplamacs.Designer.cs">
+      <DependentUpon>Not_Hesaplamacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListesi.Designer.cs">
+      <DependentUpon>OgrenciListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenci_Notları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenci_Notları.Designer.cs">
+      <DependentUpon>Ogrenci_Notları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OYSDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OYSDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YeniÖğrenciEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniÖğrenciEkleme.Designer.cs">
+      <DependentUpon>YeniÖğrenciEkleme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BilgisayarMüh.resx">
+      <DependentUpon>BilgisayarMüh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersListesi.resx">
+      <DependentUpon>DersListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Not_Hesaplamacs.resx">
+      <DependentUpon>Not_Hesaplamacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListesi.resx">
+      <DependentUpon>OgrenciListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenci_Notları.resx">
+      <DependentUpon>Ogrenci_Notları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="YeniÖğrenciEkleme.resx">
+      <DependentUpon>YeniÖğrenciEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OYSDataSet.xsc">
+      <DependentUpon>OYSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet.xss">
+      <DependentUpon>OYSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet1.xsc">
+      <DependentUpon>OYSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet1.xss">
+      <DependentUpon>OYSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet10.xsc">
+      <DependentUpon>OYSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet10.xss">
+      <DependentUpon>OYSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet11.xsc">
+      <DependentUpon>OYSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet11.xss">
+      <DependentUpon>OYSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet12.xsc">
+      <DependentUpon>OYSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet12.xss">
+      <DependentUpon>OYSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet13.xsc">
+      <DependentUpon>OYSDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet13.xss">
+      <DependentUpon>OYSDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet14.xsc">
+      <DependentUpon>OYSDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet14.xss">
+      <DependentUpon>OYSDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet15.xsc">
+      <DependentUpon>OYSDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet15.xss">
+      <DependentUpon>OYSDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet16.xsc">
+      <DependentUpon>OYSDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet16.xss">
+      <DependentUpon>OYSDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet17.xsc">
+      <DependentUpon>OYSDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet17.xss">
+      <DependentUpon>OYSDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet2.xsc">
+      <DependentUpon>OYSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet2.xss">
+      <DependentUpon>OYSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet3.xsc">
+      <DependentUpon>OYSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet3.xss">
+      <DependentUpon>OYSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet4.xsc">
+      <DependentUpon>OYSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet4.xss">
+      <DependentUpon>OYSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet5.xsc">
+      <DependentUpon>OYSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet5.xss">
+      <DependentUpon>OYSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet6.xsc">
+      <DependentUpon>OYSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet6.xss">
+      <DependentUpon>OYSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet7.xsc">
+      <DependentUpon>OYSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet7.xss">
+      <DependentUpon>OYSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet8.xsc">
+      <DependentUpon>OYSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet8.xss">
+      <DependentUpon>OYSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet9.xsc">
+      <DependentUpon>OYSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="OYSDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OYSDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OYSDataSet9.xss">
+      <DependentUpon>OYSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="VisionLink Solution.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a69adc3c03c0e21249b0a7a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2e0a757100e859b64724bc2ab7dfbfbe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\nugetexample.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Tools.InnoSetup.6.0.3\build\Tools.InnoSetup.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Tools.InnoSetup.6.0.3\build\Tools.InnoSetup.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgrenciYonetimSistemi", "OgrenciYonetimSistemi\OgrenciYonetimSistemi.csproj", "{5CAE2519-ADD2-499A-ABEE-53C57DDE5D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{342BB1E6-53C6-40E7-97E2-80FFDF59810D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{AEFC76E3-C94E-4751-A1C4-DA36957999FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CAE2519-ADD2-499A-ABEE-53C57DDE5D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAE2519-ADD2-499A-ABEE-53C57DDE5D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAE2519-ADD2-499A-ABEE-53C57DDE5D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAE2519-ADD2-499A-ABEE-53C57DDE5D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{342BB1E6-53C6-40E7-97E2-80FFDF59810D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342BB1E6-53C6-40E7-97E2-80FFDF59810D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{342BB1E6-53C6-40E7-97E2-80FFDF59810D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{342BB1E6-53C6-40E7-97E2-80FFDF59810D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEFC76E3-C94E-4751-A1C4-DA36957999FB}.Debug|Any CPU.ActiveCfg = Debug
+		{AEFC76E3-C94E-4751-A1C4-DA36957999FB}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
